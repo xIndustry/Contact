@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waystem</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+    
     <style>
         /* Base Reset & Variables */
         * {
@@ -116,6 +118,36 @@
         p.lead a { color: #fff; text-decoration: none; font-weight: 500; }
         p.lead a:hover { color: var(--accent); }
 
+        /* Button Styling for Roles */
+        .btn-job {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 12px;
+            padding: 12px 24px;
+            background-color: var(--accent);
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-job .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-job:hover {
+            background-color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 209, 178, 0.4);
+        }
+
+        .btn-job:hover .arrow {
+            transform: translateX(4px);
+        }
+
         /* Values & Team Sections */
         .values { display: flex; flex-wrap: wrap; gap: 14px; }
 
@@ -189,14 +221,13 @@
     </style>
 </head>
 <body>
-
     <header class="sticky-bar">
         <nav class="nav-container">
             <a href="https://www.waystem.com" class="company-name">Waystem</a>
             <ul class="nav-links">
-                <li><a href='/about/'>About</a></li>
-                <li><a href='/solutions/'>Solutions</a></li>
-                <li><a href='/contact/'>Contact</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/solutions/">Solutions</a></li>
+                <li><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -258,6 +289,6 @@
         <p>&copy; 2026 Waystem</p>
     </footer>
 
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b85c003b5a974cb9b1fbc10f0c1a31f3","r":1,"spa":2}' crossorigin="anonymous"></script>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b85c003b5a974cb9b1fbc10f0c1a31f3","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
